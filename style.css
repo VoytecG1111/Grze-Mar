@@ -8,7 +8,7 @@ html, body {
     flex: 1;
 }
 .carousel-container {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 15px;
     padding: 20px;
@@ -66,6 +66,7 @@ body {
     flex:1;
     min-width: 250px;
     padding: 3%;
+    font-size: 20px;
 }
 .zdjecie1{
     flex:1;
@@ -92,7 +93,9 @@ body {
         text-align: center;
     }
 }
+
 footer {
+    margin-top: 5%;
     background-color: #333;
     color: white;
     text-align: center;
@@ -123,3 +126,27 @@ footer {
       width: 100%;
     }
   }
+  .service-item {
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .service-item:last-child {
+        border-bottom: none;
+    }
+}
+.uslugi{
+    margin-left: 3%;
+    font-size: 25px;
+}
+.ofertaContainer {
+    padding: 10%;
+    display: block;
+    display: flex;
+    visibility: visible;
+}
